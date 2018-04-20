@@ -961,6 +961,9 @@ footer .search_link {
 	.section_9 .article .img_block {
 		height: auto;
 	}
+	.modal_window {
+		width: 95%;
+	}
 }
 
 @media (min-width: 1200px) {
