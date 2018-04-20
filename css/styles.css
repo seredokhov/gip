@@ -588,7 +588,7 @@ a.download::before {
 	font-weight: bold;
 }
 .section_10 .presentation_body {
-	padding: 45px;
+	padding: 60px 45px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
