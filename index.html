@@ -67,6 +67,7 @@
 				<div class="col-lg-5 description_block">
 					<h1>УТП Название в формате H1</h1>
 					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации</p>
+					<a href="#" class="start_test">Оставить заявку</a>
 				</div>
 				<div class="col-lg-7 img_block">
 					<img src="images/1.png" alt="img">
@@ -107,7 +108,7 @@
 				<div class="title-col">Скачивание каталога основной продукции</div>
 				<div class="dotted-col"></div>
 				<div class="button-col">
-					<a href="file/file.txt" class="download" download>Скачать</a>
+					<a href="documents/catalog.txt" class="download" download>Скачать</a>
 				</div>
 			</div>
 		</div>
@@ -119,7 +120,7 @@
 			<div class="scheme_block">
 				<img src="images/scheme.png" alt="scheme">
 			</div>
-			<a href="#" class="more_info">Узнайте больше о компании GIPERCOM</a>
+			<a href="#" class="more_info modal_2_link">Узнайте больше о компании GIPERCOM</a>
 		</div>
 	</section>
 
@@ -182,23 +183,20 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="section_7 section_3">
+	
+	<section class="section_7">
 		<div class="container">
-			<div class="flex-row">
-				<div class="title-col">Скачивание технической документации</div>
-				<div class="dotted-col"></div>
-				<div class="button-col col-lg-4">
-					<a href="file/file.txt" class="download" download>Документ 1</a>
-					<a href="file/file.txt" class="download" download>Документ 2</a>
-					<a href="file/file.txt" class="download" download>Документ 3</a>
-					<a href="file/file.txt" class="download" download>Документ 4</a>
-					<a href="file/file.txt" class="download" download>Документ 5</a>
-					<a href="file/file.txt" class="download" download>Документ 6</a>
-				</div>
-			</div>
+			<a href="#" class="more_info" id="show_documents">Скачивание технической документации</a>
+			<ul class="documents_list">
+				<li><a href="documents/1.txt" download>Ссылка на скачивание документа 1</a></li>
+				<li><a href="documents/2.txt" download>Ссылка на скачивание документа 2</a></li>
+				<li><a href="documents/3.txt" download>Ссылка на скачивание документа 3</a></li>
+				<li><a href="documents/4.txt" download>Ссылка на скачивание документа 4</a></li>
+				<li><a href="documents/5.txt" download>Ссылка на скачивание документа 5</a></li>
+			</ul>
 		</div>
 	</section>
+	
 
 	<section class="section_8">
 		<div class="container">
@@ -307,18 +305,30 @@
 		</div>
 	</footer>
 
-	<div class="overlay"></div>
+
 	<div class="modal_window">
 		<button class="modal_close">&#10006;</button>
 		<div class="modal_title">Оставьте заявку</div>
 		<p>и мы свяжемся с вами<br> в ближайшее время</p>
 		<form action="#">
-			<input type="text" class="modal_input" placeholder="Ваше имя" name="name">
 			<input type="text" class="modal_input" placeholder="Ваш телефон" name="phone">
 			<input type="text" class="modal_input" placeholder="Ваш email" name="mail">
 			<button type="submit" class="send_modal">Оставить заявку</button>
 		</form>
 	</div>
+
+	<div class="modal_window_2">
+		<button class="modal_close">&#10006;</button>
+		<div class="modal_title">Заголовок</div>
+		<p>Дополнительный текст</p>
+		<form action="#">
+			<input type="text" class="modal_input" placeholder="Ваш email" name="mail">
+			<textarea name="text" class="modal_textarea" placeholder="Примечания"></textarea>
+			<button type="submit" class="send_modal">Отправить</button>
+		</form>
+	</div>
+
+	<div class="overlay"></div>
 
 
 

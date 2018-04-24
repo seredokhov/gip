@@ -41,8 +41,7 @@ $(function(){
 $(function(){
     var link = $('.menu_link'),
         menu = $('.menu_block'),
-        overlay = $('.overlay'),
-        close = $('.modal_close');
+        overlay = $('.overlay');
 
     link.on('click', function(){
         menu.addClass('open');
@@ -60,15 +59,48 @@ $(function(){
 $(function(){
     var link = $('.modal_link'),
         modal = $('.modal_window'),
-        overlay = $('.overlay');
+        overlay = $('.overlay'),
+        close = $('.modal_close');
 
     link.on('click', function(){
         modal.fadeIn();
         overlay.fadeIn();
         return false;
     })
-    overlay.add(close).on('click', function(){
+
+    close.add(overlay).on('click', function(){
         modal.fadeOut();
         overlay.fadeOut();
+    })
+})
+
+// Модальное окно 2
+
+$(function(){
+    var link = $('.modal_2_link'),
+        modal = $('.modal_window_2'),
+        overlay = $('.overlay'),
+        close = $('.modal_close');
+
+    link.on('click', function(){
+        modal.fadeIn();
+        overlay.fadeIn();
+        return false;
+    })
+    close.add(overlay).on('click', function(){
+        modal.fadeOut();
+        overlay.fadeOut();
+    })
+})
+
+// Список документов для скачки
+
+$(function(){
+    var link = $('#show_documents'),
+        ul = $('.documents_list');
+
+    link.on('click', function(){
+        ul.slideToggle();
+        return false;
     })
 })
