@@ -447,6 +447,15 @@ a.more_info:hover,
 .section_7 .more_info {
 	margin: 0;
 }
+.section_7 .more_info::before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 30px;
+	height: 30px;
+	margin-right: 30px;
+	background: url('../images/download.png') no-repeat center;
+}
 .section_7 ul li {
 	display: block;
 	padding: 10px 15px;
