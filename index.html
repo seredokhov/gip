@@ -305,7 +305,7 @@
 		</div>
 	</footer>
 
-
+	<!-- Модальные окна -->
 	<div class="modal_window">
 		<button class="modal_close">&#10006;</button>
 		<div class="modal_title">Оставьте заявку</div>
@@ -327,6 +327,174 @@
 			<button type="submit" class="send_modal">Отправить</button>
 		</form>
 	</div>
+
+	<div class="modal_window_3">
+		<button class="modal_close">&#10006;</button>
+		<div class="modal_title">Мы подберем<br> подходящую модель usrp<br> в течении 15 минут</div>
+		<p>Результаты пришлем на почту</p>
+		<form action="#">
+			<input type="text" class="modal_input" placeholder="Ваш email" name="mail">
+			<button type="submit" class="send_modal" disabled="disabled">Оставить заявку</button>
+		</form>
+	</div>
+
+	<!-- Опрос -->
+	<div class="test_modal">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="question_block">
+					<div class="counter">
+						<span class="this">1</span>
+						<span class="sep">/</span>
+						<span class="sum">5</span>
+					</div>
+					<form action="#" method="GET">
+						<div class="question active">
+							<p>В каком диапазоне радиочастот вы планируете работать?</p>
+							<label>
+								<input type="radio" name="Hz_range" value="10mhz-6ghz">
+								<span class="answer">10 МГц - 6 ГГц</span>
+							</label>
+							<label>							
+								<input type="radio" name="Hz_range" value="70mhz-6ghz">
+								<span class="answer">70 МГц - 6 ГГц</span>
+							</label>
+							<label>							
+								<input type="radio" name="Hz_range" value="50mhz-2.2ghz">
+								<span class="answer">50 МГц - 2,2 ГГц</span>
+							</label>
+							<label>							
+								<input type="radio" name="Hz_range" value="400mhz-4.4ghz">
+								<span class="answer">400 МГц - 4,4 ГГц</span>
+							</label>
+							<label>							
+								<input type="radio" name="Hz_range" value="1.2ghz-6ghz">
+								<span class="answer">1,2 ГГц - 6 ГГц</span>
+							</label>
+							<label>							
+								<input type="radio" name="Hz_range" value="2.4ghz-2.5ghz">
+								<span class="answer">2,4 ГГц - 2,5 ГГц</span>
+							</label>
+						</div>
+
+						<div class="question">
+							<p>Выберите мгновенную полосу пропускания.</p>
+							<label>
+								<input type="radio" name="bandwidth" value="20mhz">
+								<span class="answer">20 МГц</span>							
+							</label>
+							<label>
+								<input type="radio" name="bandwidth" value="40mhz">
+								<span class="answer">40 МГц</span>							
+							</label>
+							<label>
+								<input type="radio" name="bandwidth" value="56mhz">
+								<span class="answer">56 МГц</span>							
+							</label>
+							<label>
+								<input type="radio" name="bandwidth" value="80mhz">
+								<span class="answer">80 МГц</span>							
+							</label>
+							<label>
+								<input type="radio" name="bandwidth" value="120mhz">
+								<span class="answer">120 МГц</span>							
+							</label>
+							<label>
+								<input type="radio" name="bandwidth" value="160mhz">
+								<span class="answer">160 МГц</span>							
+							</label>						
+						</div>
+
+						<div class="question">
+							<p>Сколько каналов входов/выходов вам необходимо?</p>
+							<label>
+								<input type="radio" name="input_channels" value="1/1">
+								<span class="answer">1/1</span>							
+							</label>
+							<label>
+								<input type="radio" name="input_channels" value="2/2">
+								<span class="answer">2/2</span>							
+							</label>
+							<label>
+								<input type="radio" name="input_channels" value="0/4">
+								<span class="answer">0/4</span>							
+							</label>
+							<label>
+								<input type="radio" name="input_channels" value="custom">
+								<span class="answer">Ваш вариант</span>						
+							</label>
+						</div>
+
+						<div class="question">
+							<p>Требуется ли вам втроенный опорный тактовый генератор (GPSDO)?</p>
+							<label>
+								<input type="radio" name="GPSDO" value="yes">
+								<span class="answer">Да</span>							
+							</label>
+							<label>
+								<input type="radio" name="GPSDO" value="no">
+								<span class="answer">Нет</span>							
+							</label>
+							<label>
+								<input type="radio" name="GPSDO" value="perhaps">
+								<span class="answer">Не определился</span>							
+							</label>
+						</div>
+
+						<div class="question">
+							<p>Выберите дополнительные опции.</p>
+							<label>
+								<input type="radio" name="additional_options" value="1gb;Ethernet;RG-45;10m">
+								<span class="answer">кабель 1 Gb Ethernet, RG-45, 10 метров</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="10gb;Ethernet;MXle;3m">
+								<span class="answer">кабель 10 Gb Ethernet, Mxle, 3 метра</span>						
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="10gb;Ethernet;Optic;SPF;LC-LC;100m">
+								<span class="answer">кабель 10 Gb Ethernet, оптический, SPF, LC-LC, 100 метров</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="2.4-2.5GHz;4.5-4.9GHz">
+								<span class="answer">антенна 2,4-2,5 ГГц; 4,9-4,5 ГГц</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="824-960MHz;1700-1990MHz">
+								<span class="answer">антенна 824-960 МГц; 1700-1990 МГц</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="144MHz;400MHz;1200MHz">
+								<span class="answer">антенна 144; 400; 1200 МГц</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="850-6500MHz">
+								<span class="answer">антенна 850-6500 МГц</span>
+							</label>
+							<label>
+								<input type="radio" name="additional_options" value="no">
+								<span class="answer">этого ничего не нужно, спасибо</span>
+							</label>
+						</div>
+						<button href="#" class="next_question" disabled='disabled'>Далее</button>					
+					</form>
+				</div>
+
+
+			</div>
+			<div class="col-md-4">
+				<div class="person_card">
+					<div class="question_img_block">
+						<img src="images/person2.jpg" alt="person2">
+					</div>
+					<span class="name">Иван Русский</span>
+					<span class="profession">Инженер</span>
+					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<div class="overlay"></div>
 

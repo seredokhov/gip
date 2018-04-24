@@ -93,6 +93,30 @@ $(function(){
     })
 })
 
+// Модальное окно 3
+
+$(function(){
+    var modal = $('.modal_window_3'),
+        input = modal.find('.modal_input'),
+        sendBtn = modal.find('.send_modal'),
+        overlay = $('.overlay'),
+        close = $('.modal_window_3 .modal_close'),
+
+    close.add(overlay).on('click', function(){
+        modal.fadeOut();
+        overlay.fadeOut();
+    })
+
+    input.on('input', function(){
+        var value = $(this).val();
+        if (value.length > 3) {
+            sendBtn.removeAttr('disabled');
+        } else {
+            sendBtn.attr('disabled', 'disabled');
+        }
+    })
+})
+
 // Список документов для скачки
 
 $(function(){
@@ -102,5 +126,46 @@ $(function(){
     link.on('click', function(){
         ul.slideToggle();
         return false;
+    })
+})
+
+// Опрос 
+
+$(function(){
+    var link = $('.start_test'),
+        overlay =$('.overlay'),
+        modal = $('.test_modal'),
+        email_modal = $('.modal_window_3'),
+        next = $('.next_question'),
+        question_block = $('.question_block'),
+        question = $('.question'),
+        check = question.find('input'),
+        counter = $('.counter').find('.this'),
+        count = 0;
+
+    link.on('click', function(){
+        modal.fadeIn();
+        overlay.fadeIn();
+        return false;
+    })
+
+    next.on('click', function(){
+        
+        if (count < question.length - 1 ) {
+            count++;
+            counter.text(count + 1);
+            question.removeClass('active');
+            question.eq(count).addClass('active');
+        } else {
+            email_modal.fadeIn();
+            modal.fadeOut();
+
+        }
+        next.attr('disabled', 'disabled');
+        return false;
+    })
+
+    check.on('change', function(){
+        next.removeAttr("disabled")
     })
 })
