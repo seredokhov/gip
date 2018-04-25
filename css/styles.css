@@ -473,6 +473,7 @@ a.more_options_link:hover {
 }
 .section_6 .img_block {
 	border: 3px solid #f3f5f6;
+	background: #fff;
 }
 .section_6 img {
 	display: block;
