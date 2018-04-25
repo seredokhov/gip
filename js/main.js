@@ -95,7 +95,7 @@ $(function(){
 
 
 
-// Опрос 
+// Модальное окно опроса
 
 $(function(){
     var link = $('.start_test'),
@@ -108,21 +108,24 @@ $(function(){
         email_modal = $('.modal_window_3'),
         input = email_modal.find('.modal_input'),
         sendBtn = email_modal.find('.send_modal'),
-        counter = $('.counter').find('.this'),
-        count,
         test_close = $('.close_btn'),
-        email_close = $('.modal_window_3 .modal_close');;
+        email_close = $('.modal_window_3 .modal_close'),
+        counter = $('.counter').find('.this'),
+        count;
 
-    // По нажатию на ссылку открываем модальное окно и обновляем его,
+    // По нажатию на ссылку открываем модальное окно теста и обновляем его,
     // если оно уже было открыто ранее
     link.on('click', function(){
 
+        // сброс счетчика и нажатых радиокнопок
         count = 0;
         counter.text(count + 1);
         check.removeAttr("checked");
 
-        next_question();       
+        // сброс активного вопроса
+        next_question();
 
+        // Display по умолчанию
         test_modal.fadeIn();
         email_modal.fadeOut();
         question_block.fadeIn();
@@ -131,6 +134,12 @@ $(function(){
         return false;
     })
 
+    // Активация кнопки "далее"
+    check.on('change', function(){
+        next.removeAttr("disabled")
+    })
+
+    // Кнопка "далее"
     next.on('click', function(){
         
         if (count < question.length - 1 ) {
@@ -147,12 +156,7 @@ $(function(){
         return false;
     })
 
-    // Активация кнопки "далее"
-    check.on('change', function(){
-        next.removeAttr("disabled")
-    })
-
-    // Следующий вопрос
+    // Активация следующего вопроса по count
     function next_question() {        
         question.removeClass('active');
         question.eq(count).addClass('active');
@@ -176,8 +180,8 @@ $(function(){
     })
 })
 
-// Выпадающий Список документов для скачки
 
+// Выпадающий Список документов для скачки
 $(function(){
     var link = $('#show_documents'),
         ul = $('.documents_list');
@@ -190,7 +194,6 @@ $(function(){
 
 
 // Выпадающий Список доп опций
-
 $(function(){
     var link = $('.more_options_link'),
         ul = $('.more_option_list');
