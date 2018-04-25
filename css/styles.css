@@ -1183,6 +1183,7 @@ footer .search_link {
 		font-size: 30px;
 		line-height: normal;
 		min-height: auto;
+		padding: 0 15px;
 	}
 	.section_2 .article .text_block h1 {
 		font-size: 25px;
