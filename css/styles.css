@@ -136,6 +136,8 @@ header a.logo img {
 }
 .header_contacts {
 	overflow: hidden;
+	max-width: 250px;
+	margin-left: auto;
 }
 .header_contacts a {
 	text-decoration: none;
