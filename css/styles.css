@@ -186,10 +186,22 @@ header a.logo img {
 }
 .section_1 p {
 	font-family: "ProximaNovaThin";
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 28px;
 	color: #000;
 	text-align: justify;
+}
+.utp_list {
+	font-family: "ProximaNovaThin";
+	font-size: 18px;
+	line-height: 28px;
+	color: #000;
+}
+.utp_list li::before {
+	content: "\2714";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
 }
 .section_1 .img_block {
 	position: relative;
@@ -236,7 +248,6 @@ header a.logo img {
 	transition: all .1s linear;
 	margin-top: 30px;
 }
-
 /* section_2 */
 .section_2 {
 	min-height: 635px;
@@ -475,6 +486,8 @@ a.more_options_link:hover {
 .section_6 .img_block {
 	border: 3px solid #f3f5f6;
 	background: #fff;
+	max-height: 465px;
+	overflow: hidden;
 }
 .section_6 img {
 	display: block;
@@ -484,17 +497,15 @@ a.more_options_link:hover {
 .section_6 .text_block {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .section_6 .text_block p {
 	font-size: 15px;
-	line-height: 28px;
+	line-height: 27px;
 	color: #000;
 	font-family: "ProximaNovaThin";
 	margin: 0;
 	text-align: justify;
-	margin-bottom: 20px;
 }
 .section_6 a.submit,
 .next_question {
@@ -509,6 +520,21 @@ a.more_options_link:hover {
 	font-size: 23px;
 	border-radius: 4px;
 	transition: all .1s linear;
+}
+.section_6 a.submit {
+	width: auto;
+	max-width: 400px;
+}
+.section_6 .ps {
+	max-width: 200px;
+	margin-left: auto;
+}
+.section_6 .ps span {
+	display: block;
+	font-size: 15px;
+	line-height: 27px;
+	color: #000;
+	font-family: "ProximaNovaThin";
 }
 a.more_info:hover,
 .section_6 a.submit:hover,
@@ -709,6 +735,9 @@ a.more_info:hover,
 /* footer */
 footer {
 	padding: 45px 0;
+}
+footer p {
+	margin: 0;
 }
 footer .row {
     display: flex;
@@ -1147,6 +1176,15 @@ footer .search_link {
 		max-width: 360px;
 		margin: 0 auto;
 	}
+	footer .row > div {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    margin-bottom: 20px;
+	}
+	footer .menu_block {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1186,12 +1224,6 @@ footer .search_link {
 	.section_2 .article .img_block,
 	.section_5 .article .img_block {
 		margin-bottom: 15px;
-	}
-	footer .row > div {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		margin-bottom: 10px;
 	}
 	h1,
 	.title,
