@@ -1217,6 +1217,15 @@ footer .search_link {
 	.test_modal {
 		padding: 20px;
 	}
+	.section_10 .presentation_header {
+		padding: 0 20px;
+	}
+	.section_10 .wrap,
+	.section_6 .img_block_wrap,
+	.section_9 .article .wrap {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 @media (min-width: 1200px) {
