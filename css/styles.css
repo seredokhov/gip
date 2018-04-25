@@ -1152,6 +1152,12 @@ footer .search_link {
 	.section_4 .bg_gray {
 		padding-top: 30px;
 	}
+	.section_4 .options_block {
+		padding: 30px 15px;
+	}
+	.section_4 .options_list {
+	    margin-bottom: 40px;
+	}
 	.section_10 .presentation_body {
 		padding: 20px;
 		display: block; 
