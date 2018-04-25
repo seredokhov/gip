@@ -57,6 +57,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="overlay"></div>
 			</div>
 		</div>
 	</header>
@@ -115,11 +116,60 @@
 	</section>
 
 	<section class="section_4">
-		<div class="container">
-			<div class="title" id="2">Схема товара в разрезе</div>
-			<div class="scheme_block">
-				<img src="images/scheme.png" alt="scheme">
+		<div class="bg_gray">
+			<div class="container">
+				<div class="title" id="2">Схема товара в разрезе</div>
+				<div class="scheme_block">
+					<img src="images/scheme.png" alt="scheme">
+				</div>				
 			</div>
+		</div>
+		<div class="container options_block">
+			<ul class="options_list">
+				<li>
+					<div class="list_num">1</div>
+					<div class="list_title">ПЛИС Xilinx Kintex-7</div>
+					<p>Цифровая обработка и формирование сигналов в реальном времени с аппаратной скоростью и детерминизмом ПЛИС, причем ПЛИС програмируется  в LabVIEW</p>
+				</li>
+				<li>
+					<div class="list_num">2</div>
+					<div class="list_title">Широкополосный ВЧ приемник и передатчик</div>
+					<p>2 канала ввода-вывода с мгновенной полосой до 120 МГц и выше в диапазоне частот от 50 МГц до 6 ГГц.</p>
+				</li>
+				<li>
+					<div class="list_num">3</div>
+					<div class="list_title">Когерентные многоканальные системы</div>
+					<p>Когерентное объединение модулей</p>
+				</li>
+				<li>
+					<div class="list_num">4</div>
+					<div class="list_title">Скоростное подключение к ПК</div>
+					<p>Потоковый обмен данными с ПК по  шине Gigabit Ethernet или PCI Express на скорости до 800 МБ/с.</p>
+				</li>
+				<li>
+					<div class="list_num">5</div>
+					<div class="list_title">Высокостабильный опорный генератор</div>
+					<p>Термостатированный опорный генератор с точностью 25 ppd. Синхронизация с сигналом GPS с улучшением точности до 0.5 ppd.</p>
+				</li>
+				<li>
+					<div class="list_num full">6</div>
+					<a href="#" class="more_options_link">Дополнительные опции</a>
+					<ul class="more_option_list">
+						<li>
+							<div class="list_title">Заголовок опции</div>
+							<p>Текст описание опции</p>
+						</li>
+						<li>
+							<div class="list_title">Заголовок опции</div>
+							<p>Текст описание опции</p>
+						</li>
+						<li>
+							<div class="list_title">Заголовок опции</div>
+							<p>Текст описание опции</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
 			<a href="#" class="more_info modal_2_link">Узнайте больше о компании GIPERCOM</a>
 		</div>
 	</section>
@@ -328,27 +378,19 @@
 		</form>
 	</div>
 
-	<div class="modal_window_3">
-		<button class="modal_close">&#10006;</button>
-		<div class="modal_title">Мы подберем<br> подходящую модель usrp<br> в течении 15 минут</div>
-		<p>Результаты пришлем на почту</p>
-		<form action="#">
-			<input type="text" class="modal_input" placeholder="Ваш email" name="mail">
-			<button type="submit" class="send_modal" disabled="disabled">Оставить заявку</button>
-		</form>
-	</div>
 
 	<!-- Опрос -->
-	<div class="test_modal">
-		<div class="row">
+	<form action="#" method="GET" class="test_modal">
+		<a href="#" class="modal_close close_btn">&#10006;</a>
+		<div class="row question_block container">
 			<div class="col-md-8">
-				<div class="question_block">
+				<div>
 					<div class="counter">
 						<span class="this">1</span>
 						<span class="sep">/</span>
 						<span class="sum">5</span>
 					</div>
-					<form action="#" method="GET">
+					<div>
 						<div class="question active">
 							<p>В каком диапазоне радиочастот вы планируете работать?</p>
 							<label>
@@ -476,13 +518,12 @@
 								<span class="answer">этого ничего не нужно, спасибо</span>
 							</label>
 						</div>
-						<button href="#" class="next_question" disabled='disabled'>Далее</button>					
-					</form>
+
+						<button type="button" href="#" class="next_question" disabled='disabled'>Далее</button>
+					</div>
 				</div>
-
-
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 visible-lg visible-md">
 				<div class="person_card">
 					<div class="question_img_block">
 						<img src="images/person2.jpg" alt="person2">
@@ -493,10 +534,15 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
-
-	<div class="overlay"></div>
+		<div class="modal_window_3">
+			<a href="#" class="modal_close">&#10006;</a>
+			<div class="modal_title">Мы подберем<br> подходящую модель usrp<br> в течении 15 минут</div>
+			<p>Результаты пришлем на почту</p>
+			<input type="text" class="modal_input" placeholder="Ваш email" name="mail">
+			<button type="submit" class="send_modal" disabled="disabled">Оставить заявку</button>
+		</div>
+	</form>
 
 
 
