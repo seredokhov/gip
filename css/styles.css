@@ -365,7 +365,7 @@ a.more_info {
 .section_4 .options_list > li {
 	position: relative;
 	padding-left: 60px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 .section_4 .options_list .list_num {
 	display: block;
@@ -379,7 +379,7 @@ a.more_info {
 	font-size: 20px;
 	font-family: "ProximaNovaSemibold";
 	position: absolute;
-	top: 0;
+	top: -10px;
 	left: 0;
 }
 .section_4 .options_list .list_num.full {
@@ -407,7 +407,7 @@ a.more_options_link {
 	font-size: 23px;
 	line-height: 24px;
 	font-family: "ProximaNovaSemibold";
-	padding: 5px 0;
+	padding-bottom: 5px;
 	border-bottom: 3px dotted #4686c1;
 }
 a.more_options_link:hover {
