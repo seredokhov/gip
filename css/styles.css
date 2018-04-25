@@ -739,6 +739,8 @@ footer .search_block {
 }
 footer .footer_search {
 	position: relative;
+	max-width: 215px;
+	margin-left: auto;
 }
 footer .search {
 	display: block;

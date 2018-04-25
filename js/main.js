@@ -138,8 +138,9 @@ $(function(){
             counter.text(count + 1);
             next_question();
         } else {
-            email_modal.fadeIn();
-            question_block.fadeOut();
+            question_block.fadeOut(100, function(){
+                email_modal.fadeIn(100);    
+            });
 
         }
         next.attr('disabled', 'disabled');
