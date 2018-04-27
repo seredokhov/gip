@@ -646,6 +646,14 @@ a.more_info:hover,
 .section_9 .article {
 	margin-bottom: 15px;
 }
+.section_9 .article > a {
+	text-decoration: none;
+	display: block;
+	transition: all .2s linear;
+}
+.section_9 .article > a:hover .img_block {
+	border-color: #ccc;
+}
 .section_9 .article h1 {
 	font-size: 28px;
 	line-height: 40px;
@@ -671,7 +679,8 @@ a.more_info:hover,
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #fff;	
+	background-color: #fff;
+	transition: all .2s linear;
 }
 
 /* News */
