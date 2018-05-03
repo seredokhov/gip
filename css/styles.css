@@ -1009,7 +1009,7 @@ footer .search_link {
 	text-align: center;
 	line-height: 30px;
 	font-size: 20px;
-	z-index: 100;
+	z-index: 10;
 }
 .modal_close:hover {
 	text-decoration: none;
