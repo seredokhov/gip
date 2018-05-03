@@ -102,6 +102,7 @@ $(function(){
         overlay =$('.overlay'),
         test_modal = $('.test_modal'),
         next = $('.next_question'),
+        prev = $('.prev_question'),
         question_block = $('.question_block'),
         question = $('.question'),     
         check = question.find('input'),
@@ -136,24 +137,42 @@ $(function(){
 
     // Активация кнопки "далее"
     check.on('change', function(){
-        next.removeAttr("disabled")
+        next.removeAttr("disabled");
     })
 
     // Кнопка "далее"
     next.on('click', function(){
+
+        var currentQuestionCheck;
+        next.attr('disabled', 'disabled');
         
         if (count < question.length - 1 ) {
             count++;
             counter.text(count + 1);
+
+            currentQuestionCheck = question.eq(count).find('input');
+            currentQuestionCheck.each(function(){
+                if( $(this).prop('checked') ) {
+                    next.removeAttr("disabled");
+                }
+            });
+
             next_question();
         } else {
             question_block.fadeOut(100, function(){
                 email_modal.fadeIn(100);    
             });
-
         }
-        next.attr('disabled', 'disabled');
+
         return false;
+    })
+    prev.on('click', function(){
+        if (count > 0) {
+            count--;
+            counter.text(count + 1);
+            next_question();
+            next.removeAttr("disabled");
+        }
     })
 
     // Активация следующего вопроса по count
