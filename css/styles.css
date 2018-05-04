@@ -283,7 +283,9 @@ header .logo_1 img {
 	margin-bottom: 15px;
 }
 .section_2 .article img {
-	max-width: 100%;
+	max-width: 60%;
+	display: block;
+	margin: 0 auto;
 }
 .section_2 .article h1 {
 	font-size: 28px;
