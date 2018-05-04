@@ -119,6 +119,9 @@ $(function(){
     // если оно уже было открыто ранее
     link.on('click', function(){
 
+        // Активация прокрутки, на случай слишком длинных вопросов
+        test_modal.css({'overflow': 'auto'});
+
         // сброс счетчика и нажатых радиокнопок
         count = 0;
         counter.text(count + 1);
@@ -162,7 +165,10 @@ $(function(){
 
         } else {
             question_block.fadeOut(100, function(){
-                email_modal.fadeIn(100);    
+
+                test_modal.css({'overflow': 'visible'});
+                email_modal.fadeIn(100);
+
             });
         }
 
