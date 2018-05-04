@@ -7,6 +7,7 @@ body{
 	line-height: 1.5;
 	color: #222;
 	overflow-x: hidden;
+	user-select: none;
 }
 ul {
 	list-style: none;
@@ -420,6 +421,10 @@ a.more_info > span {
 	top: -10px;
 	left: 0;
 }
+.section_4 .options_list .list_num.full {
+	background: #4686c1;
+	color: #fff;
+}
 .section_4 .options_list .list_title {
 	font-size: 23px;
 	line-height: 24px;
@@ -443,10 +448,15 @@ a.more_options_link {
 	font-family: "ProximaNovaSemibold";
 	padding-bottom: 5px;
 	border-bottom: 3px dotted #4686c1;
+	cursor: pointer;
 }
-
+a.more_options_link:hover {
+	color: #2464a0;
+	border-color: #2464a0;
+}
 .more_option_list {
-	list-style: 
+	margin: 15px 0;
+	display: none;
 }
 .more_option_list > li {
 	margin-bottom: 5px;
@@ -472,6 +482,7 @@ a.more_options_link {
 	display: block;
 	width: 100%;
 	margin: 0 auto;
+	border: 3px solid #f3f5f6;
 }
 .section_5 .article .text_block {
 	position: absolute;
@@ -484,7 +495,7 @@ a.more_options_link {
 	padding: 30px 25px;
 	transition: all .2s linear;
 }
-.section_5 .article:hover .text_block {
+.section_5 .article .wrap:hover .text_block {
 	opacity: 1;
 }
 .section_5 .article .text_block h1 {
