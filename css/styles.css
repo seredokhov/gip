@@ -1354,6 +1354,13 @@ footer .search_link {
 	}
 }
 @media screen and (max-width: 992px) {
+	.test_modal {
+		max-height: 95%;
+		overflow: auto;
+	}
+	.question_block .test {
+		padding: 20px 10px;
+	}
 	.section_3 .flex-row {
 		justify-content: center;
 		min-height: auto;
