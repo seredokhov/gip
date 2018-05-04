@@ -104,7 +104,8 @@ $(function(){
         next = $('.next_question'),
         prev = $('.prev_question'),
         question_block = $('.question_block'),
-        question = $('.question'),     
+        question = $('.question'),
+        advice = $('.advice'),   
         check = question.find('input'),
         email_modal = $('.modal_window_3'),
         input = email_modal.find('.modal_input'),
@@ -158,6 +159,7 @@ $(function(){
             });
 
             next_question();
+
         } else {
             question_block.fadeOut(100, function(){
                 email_modal.fadeIn(100);    
@@ -179,6 +181,8 @@ $(function(){
     function next_question() {        
         question.removeClass('active');
         question.eq(count).addClass('active');
+        advice.removeClass('active');
+        advice.eq(count).addClass('active');
     }
 
     // Валидация формы ввода, чтобы не отправить пустое поле
