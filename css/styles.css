@@ -1231,6 +1231,12 @@ footer .search_link {
 	display: block;
 }
 @media screen and (max-width: 1200px) {
+	.header_contacts > a {
+		display: block;
+		float: none !important;
+		margin: 0 auto;
+		text-align: center;
+	}
 	.section_10 .text_block {
 		margin-top: 30px;
 	}
