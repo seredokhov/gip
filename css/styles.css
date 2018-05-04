@@ -389,7 +389,7 @@ a.more_info > span {
 .scheme_block img {
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 70%;
 }
 
 .section_4 .options_list {
@@ -455,19 +455,30 @@ a.more_options_link {
 .section_5 .article {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 25px 0;
-}
-.section_5 .article > div {
-	width: 50%;
-	padding: 0 15px;
+	padding: 25px 15px;
+	position: relative;
 }
 .section_5 .article .img_block {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 100%;
 }
 .section_5 .article img {
+	display: block;
 	max-width: 100%;
+	margin: 0 auto;
+}
+.section_5 .article .text_block {
+	position: absolute;
+	background: rgba(0, 0, 0, .7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	padding: 30px 25px;
+	transition: all .2s linear;
+}
+.section_5 .article:hover .text_block {
+	opacity: 1;
 }
 .section_5 .article .text_block h1 {
 	font-size: 28px;
@@ -477,7 +488,7 @@ a.more_options_link {
 .section_5 .article .text_block p {
 	font-size: 15px;
 	line-height: 24px;
-	color: #000;
+	color: #fff;
 	font-family: "ProximaNovaThin";
 	margin: 0;
 	text-align: justify;
@@ -1463,6 +1474,9 @@ footer .search_link {
 	.modal_window_3 fieldset {
 		margin: 0;
 		width: 100%;
+	}
+	.scheme_block img {
+		max-width: 100%;
 	}
 }
 
