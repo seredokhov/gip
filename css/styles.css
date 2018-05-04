@@ -660,7 +660,6 @@ a.more_info:hover,
 /* section_9 */
 .section_9 {
 	padding: 100px 0 85px;
-	background-color: #f5f6f9;
 }
 .section_9 .title {
 	margin-bottom: 40px;
@@ -855,6 +854,7 @@ a.more_info:hover,
 /* footer */
 footer {
 	padding: 45px 0;
+	background-color: #f5f6f9;
 }
 footer p {
 	margin: 0;
