@@ -16,10 +16,10 @@ $(function(){
                 items:1
             },
             600:{
-                items:2
+                items:1
             },
             1200:{
-                items:3
+                items:1
             }
         }
     })
@@ -224,46 +224,42 @@ $(function(){
 })
 
 
-// Выпадающий Список доп опций
-$(function(){
-    var link = $('.more_options_link'),
-        ul = $('.more_option_list');
-
-    link.on('click', function(){
-        ul.fadeToggle(100);
-        return false;
-    })
-})
-
-
 /* Анимации */
-$(function($) {
-    $.fn.animated = function(inEffect, callback) {
-        $(this).each(function() {
-            var ths = $(this);
-            ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
-                if (dir === "down") {
-                    ths.addClass(inEffect).css("opacity", "1");
-                    setTimeout(function(){                        
-                        ths.addClass('ready');
-                    }, 1000);
-                };
-            }, {
-                offset: "90%"
-            });
+if($(document).width() > 1200) {
+    $(function($) {
+        $.fn.animated = function(inEffect, callback) {
+            $(this).each(function() {
+                var ths = $(this);
+                ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+                    if (dir === "down") {
+                        ths.addClass(inEffect).css("opacity", "1");
+                        setTimeout(function(){                        
+                            ths.addClass('ready');
+                            ths.on('mouseover', function(){
+                                $(this).find('.second_text').stop().fadeIn(150);
+                            });
+                            ths.on('mouseout', function(){
+                                $(this).find('.second_text').stop().fadeOut(150);
+                            })
+                        }, 1000);
+                    };
+                }, {
+                    offset: "90%"
+                });
 
-        });    
-    };
-});
+            });    
+        };
+    });
 
 
-$(function(){
-    $(".point_1").animated("fadeInRight");
-    $(".point_2").animated("fadeInLeft");
-    $(".point_3").animated("fadeInRight");
-    $(".point_4").animated("fadeInDown");
-    $(".point_5").animated("fadeInLeft");
-    $(".point_6").animated("fadeInRight");
-    $(".point_7").animated("fadeInUp");
-});
+    $(function(){    
+            $(".point_1").animated("fadeInRight");
+            $(".point_2").animated("fadeInLeft");
+            $(".point_3").animated("fadeInRight");
+            $(".point_4").animated("fadeInDown");
+            $(".point_5").animated("fadeInLeft");
+            $(".point_6").animated("fadeInRight");
+            $(".point_7").animated("fadeInUp");    
+    });
+}
 
