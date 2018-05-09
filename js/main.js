@@ -174,6 +174,8 @@ $(function(){
 
         return false;
     })
+
+    // Кнопка "назад"
     prev.on('click', function(){
         if (count > 0) {
             count--;
@@ -232,3 +234,36 @@ $(function(){
         return false;
     })
 })
+
+
+/* Анимации */
+$(function($) {
+    $.fn.animated = function(inEffect, callback) {
+        $(this).each(function() {
+            var ths = $(this);
+            ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+                if (dir === "down") {
+                    ths.addClass(inEffect).css("opacity", "1");
+                    setTimeout(function(){                        
+                        ths.addClass('ready');
+                    }, 1000);
+                };
+            }, {
+                offset: "90%"
+            });
+
+        });    
+    };
+});
+
+
+$(function(){
+    $(".point_1").animated("fadeInRight");
+    $(".point_2").animated("fadeInLeft");
+    $(".point_3").animated("fadeInRight");
+    $(".point_4").animated("fadeInDown");
+    $(".point_5").animated("fadeInLeft");
+    $(".point_6").animated("fadeInRight");
+    $(".point_7").animated("fadeInUp");
+});
+
