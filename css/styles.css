@@ -1576,6 +1576,9 @@ footer .search_link {
 		width: 100%;
 		text-align: center;
 	}
+	.section_1 .img_block {
+		padding: 20px 15px 40px;
+	}
 }
 @media screen and (max-width: 992px) {
 	.test_modal {
