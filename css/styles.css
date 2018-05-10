@@ -1367,15 +1367,14 @@ footer .search_link {
 	font-family: "ProximaNovaLight";
 }
 .advice_block {
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 24px;
-	color: #000;
+	color: #505157;
 	text-align: center;
-	font-family: "ProximaNovaThin";
 	max-height: 210px;
 	overflow: hidden;
 	width: 370px;
-	height: 155px;
+	height: 160px;
 	margin: 43px auto 0px;
 	display: flex;
 	align-items: center;
