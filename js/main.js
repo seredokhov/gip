@@ -227,7 +227,7 @@ $(function(){
 /* Анимации */
 if($(document).width() > 1200) {
     $(function($) {
-        $.fn.animated = function(inEffect, callback) {
+        $.fn.animated = function(inEffect) {
             $(this).each(function() {
                 var ths = $(this);
                 ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
@@ -263,3 +263,7 @@ if($(document).width() > 1200) {
     });
 }
 
+/*  Инициализация маски */
+$(function($){
+    $("input[name='phone']").mask("+9(999) 999-9999");
+});
