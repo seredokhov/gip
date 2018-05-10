@@ -155,19 +155,21 @@ header .logo_1 img {
 	height: 55px;
 	background: url('../images/social_sprite.png') no-repeat;
 }
+.header_contacts .links {
+	float: right;
+}
+.header_contacts .links a {
+	display: block;
+}
 .header_contacts a.viber {
 	background-position: 0px 0px;
 }
 .header_contacts a.telegram {
 	background-position: -83px 0px;
 }
-.header_contacts a.phone {
-	float: right;
-	padding: 12px 0;
-}
 /* section_1 */
 .section_1 {
-	padding-top: 108px !important;
+	padding-top: 60px !important;
 	background: url(../images/bg1.png) no-repeat center 0px;
 	background-size: cover;
 	overflow: hidden;
@@ -798,7 +800,16 @@ a.more_info:hover,
 
 .gallery img {
 	display: block;
+	position: absolute;
 	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.section_8 .item {
+	position: relative;
+	padding-bottom: 35%;
+	overflow: hidden;
 }
 
 /* section_9 */
