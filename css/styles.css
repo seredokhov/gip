@@ -101,7 +101,7 @@ header .row {
 header .logo_1 {
 	text-decoration: none;
 	display: block;
-
+	max-width: 500px;
 }
 .logo_1 img {
 	max-width: 100%;
@@ -808,7 +808,7 @@ a.more_info:hover,
 	background-position-x: -10px;
 }
 
-.gallery img {
+#slider_1 img {
 	display: block;
 	position: absolute;
 	max-width: 100%;
@@ -917,22 +917,46 @@ a.more_info:hover,
 	background: url('../images/bg3.png') no-repeat center;
 	background-color: #f5f6f9;
 }
-.new_article {
+
+.gallery {
+
+}
+.gallery .large_photo {
+	background: #fff;
+	border: 2px solid #ccc;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.gallery .large_photo img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+}
+.gallery .small_photo_block {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	margin-bottom: 30px;
-	margin-left: -15px;
-	margin-right: -15px;
+	align-content: flex-start;
+	cursor: pointer;
+
 }
-.new_article:nth-of-type(even) .img_col  {
-	order: 1;
+.gallery .small_photo {
+	width: 25%;
+	background: #fff;	
+	filter: grayscale(100%);
+	transition: all .2s linear;
 }
-.news .img_block img {
+.gallery .small_photo.active {
+	filter: grayscale(0%);
+}
+.gallery .small_photo img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	object-fit: cover;
+	border: 1px solid #ccc;
 }
+
 .news .text_block h1 {
 	font-size: 28px;
 	line-height: 40px;
@@ -947,6 +971,23 @@ a.more_info:hover,
 	color: #000;
 	font-family: "ProximaNovaThin";
 	text-align: justify;
+}
+a.new_btn {
+	display: block;
+	text-decoration: none;
+	width: 240px;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	color: #fff;
+	background: #4686c1;
+	font-size: 23px;
+	border-radius: 4px;
+	transition: all .1s linear;
+	margin-top: 20px;
+}
+a.new_btn:hover {
+	background: #2464a0;
 }
 .popular_news {
 	padding: 100px 0 50px;

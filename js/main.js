@@ -292,3 +292,28 @@ if($(document).width() > 1200) {
 $(function($){
     $("input[name='phone']").mask("+9(999) 999-9999");
 });
+
+
+
+// Галлерея
+$(function() {
+    var galery = $('.gallery');
+    var largeImg = galery.find('.large_photo').find('img');
+    var preview = galery.find('.small_photo');
+    //var smallImg = preview.find('img');
+
+    preview.on('click', function(){
+        $(this).addClass('active');
+        preview.not($(this)).removeClass('active');
+
+        var src = $(this).find('img').attr('src');
+        
+        if(src != largeImg.attr('src') ){
+            largeImg.fadeOut(100, function(){
+                largeImg.attr('src', src).fadeIn(100);
+
+            });
+        }
+
+    })
+});
