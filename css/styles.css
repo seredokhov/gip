@@ -103,8 +103,8 @@ header .logo_1 {
 	display: block;
 
 }
-header .logo_1 img {
-	/*max-width: 100%;*/
+.logo_1 img {
+	max-width: 100%;
 }
 .menu_block {
 	display: flex;
