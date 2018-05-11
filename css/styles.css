@@ -1674,6 +1674,17 @@ footer .search_link {
 	}
 }
 @media screen and (max-width: 992px) {
+	.modal_window .modal_person_img {
+		display: none;
+	}
+	.modal_window {
+		width: 95%;
+		max-height: 95%;
+		overflow: scroll;
+	}
+	.modal_window form {
+		margin: 0;
+	}
 	.test_modal {
 		max-height: 95%;
 		overflow-x: hidden;
