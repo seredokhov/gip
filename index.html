@@ -31,9 +31,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-xs-12 logo_block">
-					<div class="logo_1">
+					<a href="index.html" class="logo_1">
 						<img src="images/logo1.png" alt="Logo">
-					</div>
+					</a>
 
 					<a href="#" class="hidden_lg menu_link">
 						<div class="humb">
@@ -197,6 +197,7 @@
 			<div class="title">Области применения</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6 article">
+					<div class="area_name">Разработка программно-определяемых радиосистем</div>
 					<div class="wrap">
 						<div class="img_block">
 							<img src="images/area/1.png" alt="item">
@@ -207,6 +208,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 article">
+					<div class="area_name">Прототипирование ВЧ устройств связи</div>
 					<div class="wrap">
 						<div class="img_block">
 							<img src="images/area/2.png" alt="item">
@@ -217,6 +219,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 article">
+					<div class="area_name">Цифровая обработка ВЧ сигналов в реальном времени</div>
 					<div class="wrap">
 						<div class="img_block">
 							<img src="images/area/3.png" alt="item">
@@ -227,6 +230,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 article">
+					<div class="area_name">Интеллектуальные цифровые радиосистемы</div>
 					<div class="wrap">
 						<div class="img_block">
 							<img src="images/area/4.png" alt="item">
@@ -288,12 +292,12 @@
 			<div class="section_header">
 				<div class="title">Оборудование на складе</div>
 				<div class="slide_controls">
-					<!-- При необходимости можно добавить класс active, чтобы закрасить ссылку в синий цвет -->
 					<a href="#" class="prev"><i></i></a>
 					<a href="#" class="next"><i></i></a>
 				</div>
 			</div>
-			<div class="owl-carousel gallery">
+			<p class="text">У нас есть склад в Санкт-Петербурге. Некоторые модели мы можем поставить за 3 дня.</p>
+			<div class="owl-carousel gallery" id="slider_1">
 			    <div class="item"><img src="images/storage/IMG_9082.JPG" alt="1"></div>
 			    <div class="item"><img src="images/storage/IMG_9137.JPG" alt="2"></div>
 			</div>
@@ -304,41 +308,59 @@
 	<section class="section_9">
 		<div class="container">
 			<div class="title">Статьи и новости</div>
-			<div class="row">
-				<article class="col-md-4 article">
-					<a href="page_news.html">
-						<h1>Заголовок в H1</h1>
-						<div class="wrap">
-							<div class="img_block">
-								<img src="images/item1.png" alt="1">
-							</div>
-						</div>
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
-					</a>
-				</article>
-				<article class="col-md-4 article">
-					<a href="page_news.html">
-						<h1>Заголовок в H1</h1>
-						<div class="wrap">
-							<div class="img_block">
-								<img src="images/item1.png" alt="1">
-							</div>
-						</div>
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
-					</a>
-				</article>
-				<article class="col-md-4 article">
-					<a href="page_news.html">
-						<h1>Заголовок в H1</h1>
-						<div class="wrap">
-							<div class="img_block">
-								<img src="images/item1.png" alt="1">
-							</div>
-						</div>
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
-					</a>
-				</article>
-
+			<div class="owl-carousel owl-theme" id="slider_2">
+			    <div class="item">
+			    	<article class="article">
+			    		<a href="page_news.html">
+			    			<h1>Заголовок в H1</h1>
+			    			<div class="wrap">
+			    				<div class="img_block">
+			    					<img src="images/item1.png" alt="1">
+			    				</div>
+			    			</div>
+			    			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
+			    		</a>
+			    	</article>
+			    </div>
+			    <div class="item">
+			    	<article class="article">
+			    		<a href="page_news.html">
+			    			<h1>Заголовок в H1</h1>
+			    			<div class="wrap">
+			    				<div class="img_block">
+			    					<img src="images/item1.png" alt="1">
+			    				</div>
+			    			</div>
+			    			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
+			    		</a>
+			    	</article>
+			    </div>
+			    <div class="item">
+			    	<article class="article">
+			    		<a href="page_news.html">
+			    			<h1>Заголовок в H1</h1>
+			    			<div class="wrap">
+			    				<div class="img_block">
+			    					<img src="images/item1.png" alt="1">
+			    				</div>
+			    			</div>
+			    			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
+			    		</a>
+			    	</article>
+			    </div>
+			    <div class="item">
+			    	<article class="article">
+			    		<a href="page_news.html">
+			    			<h1>Заголовок в H1</h1>
+			    			<div class="wrap">
+			    				<div class="img_block">
+			    					<img src="images/item1.png" alt="1">
+			    				</div>
+			    			</div>
+			    			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem</p>
+			    		</a>
+			    	</article>
+			    </div>
 			</div>
 		</div>
 	</section>
@@ -364,12 +386,9 @@
 		<img class="modal_person_img" src="images/modal_person_2.png" alt="person">		
 		<form action="#">
 			<p>Пригласите нас к участию в тендере, составим серьезную конкуренцию участникам. Если выйграем - получите надежного поставщика и партнера.</p>
-			<input type="text" class="modal_input" placeholder="Телефон для связи" name="phone" id="phone">
-			<input type="text" class="modal_input" placeholder="Ваш email" name="email">
-			<p>Приглашаем Вас принять участие в тендере на электронной площадке хххххххх чч/мм/гг. Скачать документацию для участия  в конкурсе можно по ссылке <a href="#">абрабакодабра.com</a></p>
-			<input type="text" class="modal_input" placeholder="Имя" name="name">
-			<input type="text" class="modal_input" placeholder="Организация" name="company">
-			<input type="text" class="modal_input" placeholder="Должность" name="profession">
+			<input type="text" class="modal_input" placeholder="Ваше имя" name="name">
+			<input type="text" class="modal_input" placeholder="Ваш телефон" name="phone" id="phone">
+			<textarea name="letter" class="modal_textarea">Здравствуйте Семён&#13;&#10;Приглашаем вашу компанию принять участие в конкурсе на поставку ХХХХХХ.&#13;&#10;&#13;&#10;Скачать документацию и ознакомиться с условиями участия можете по ссылке ХХХХХХХХХХ.&#13;&#10;&#13;&#10;Ваша Фамилия Имя&#13;&#10;Ваша Организация&#13;&#10;Ваша должность&#13;&#10;Ваш email</textarea>
 			<button type="submit" class="send_modal">Пригласить к участию</button>
 		</form>
 	</div>
@@ -584,8 +603,6 @@
 			</fieldset>
 		</div>
 	</form>
-
-
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

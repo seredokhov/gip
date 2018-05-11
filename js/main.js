@@ -2,7 +2,8 @@
 
 $(function(){
 
-    var owl = $('.owl-carousel'),
+    var owl = $('#slider_1'),
+        owl2 = $('.section_9 .owl-carousel'),
         next = $('.slide_controls').find('a.next'),
         prev = $('.slide_controls').find('a.prev');
 
@@ -33,7 +34,31 @@ $(function(){
         owl.trigger('next.owl.carousel');
         return false
     })
-})
+
+});
+
+// Слайдер новостей
+$(function(){
+    $('#slider_2').owlCarousel({
+        loop:true,
+        margin:30,
+        navText: [],
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+});
+
+
 
 
 // Мобильное меню
