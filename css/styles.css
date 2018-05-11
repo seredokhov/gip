@@ -7,7 +7,6 @@ body{
 	line-height: 1.5;
 	color: #222;
 	overflow-x: hidden;
-	user-select: none;
 }
 ul {
 	list-style: none;
@@ -19,7 +18,6 @@ h1{
 	color: #505157;
 	font-size: 51px;
 	line-height: 57px;
-	text-transform: uppercase;
 	font-weight: bold;
 	margin: 0;
 	margin-bottom: 20px;
@@ -64,7 +62,6 @@ button.send_modal[disabled]:hover  {
 .title {
 	color: #505157;
 	font-size: 58px;
-	text-transform: uppercase;
 	font-weight: bold;
 	min-height: 94px;
 	line-height: 94px;
@@ -1355,7 +1352,7 @@ footer .search_link {
 .person_card .profession {
 	display: block;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .person_card .name {
 	font-size: 27px;
@@ -1368,6 +1365,7 @@ footer .search_link {
 	line-height: 24px;
 	color: #505157;
 	font-family: "ProximaNovaLight";
+	margin-bottom: 15px;
 }
 .advice_block {
 	font-size: 17px;
