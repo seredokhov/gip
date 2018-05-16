@@ -441,7 +441,7 @@ a.more_info > span {
 	border: 2px solid #c3d6e8;
 }
 .scheme_block [class^="point"].ready:hover {
-	z-index: 3;
+	z-index: 10;
 }
 .scheme_block [class^="point"].ready:hover .first_text {
 	background: #e6e6e6;
@@ -539,7 +539,7 @@ a.more_info > span {
 }
 .scheme_block .point_6 .second_text {
 	top: auto;
-	bottom: 100%;
+	bottom: 101%;
 }
 
 /*7*/
@@ -552,7 +552,7 @@ a.more_info > span {
 }
 .scheme_block .point_7 .second_text {
 	top: auto;
-	bottom: 100%;
+	bottom: 101%;
 	width: 340px;
 }
 

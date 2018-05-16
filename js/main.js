@@ -258,13 +258,18 @@ if($(document).width() > 1200) {
                 ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
                     if (dir === "down") {
                         ths.addClass(inEffect).css("opacity", "1");
-                        setTimeout(function(){                        
+                        setTimeout(function(){     
+
                             ths.addClass('ready');
-                            ths.on('mouseover', function(){
-                                $(this).find('.second_text').stop().fadeIn(150);
+                            ths.find('.first_text').on('mouseover', function(){
+                                $(this).siblings('.second_text').stop().fadeIn(150);
+                                $('.overlay').stop().fadeIn(150);
+
                             });
-                            ths.on('mouseout', function(){
-                                $(this).find('.second_text').stop().fadeOut(150);
+
+                            ths.find('.first_text').on('mouseout', function(){
+                                $(this).siblings('.second_text').stop().fadeOut(150);
+                                $('.overlay').stop().fadeOut(150);
                             })
                         }, 1000);
                     };
