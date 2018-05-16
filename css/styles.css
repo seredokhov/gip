@@ -211,14 +211,14 @@ header .logo_1 {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 .section_1 .img_block img {
 	position: relative;
 	z-index: 2;
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
+	/*max-width: 100%;*/
+	max-width: 130%;
 }
 .section_1 .start_test_block {
 	margin-top: 30px;
