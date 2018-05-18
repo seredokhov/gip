@@ -40,41 +40,57 @@
 
 @font-face {
 	font-family: "GipercomRegular";
-	src:  url("../fonts/GipercomRegular/BARNAULGROTESK-REG.woff") format("woff"),
+	src: url("../fonts/GipercomRegular/BARNAULGROTESK-REG.eot");
+	src:  url("../fonts/GipercomRegular/BARNAULGROTESK-REG.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomRegular/BARNAULGROTESK-REG.woff") format("woff"),
 		  url("../fonts/GipercomRegular/BARNAULGROTESK-REG.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomItalic";
-	src:  url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.woff") format("woff"),
+	src: url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.eot");
+	src:  url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.woff") format("woff"),
 		  url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomMedium";
-	src:  url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.woff") format("woff"),
+	src: url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.eot");
+	src:  url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.woff") format("woff"),
 		  url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomMediumItalic";
-	src:  url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.woff") format("woff"),
+	src: url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.eot");
+	src:  url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.woff") format("woff"),
 		  url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomBold";
-	src:  url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.woff") format("woff"),
+	src: url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.eot");
+	src:  url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.woff") format("woff"),
 		  url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomBoldItalic";
-	src:  url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.woff") format("woff"),
+	src: url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.eot");
+	src:  url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.woff") format("woff"),
 		  url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomExtrabold";
-	src:  url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.woff") format("woff"),
+	src: url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.eot");
+	src:  url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.woff") format("woff"),
 		  url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.ttf") format("truetype");
 }
 @font-face {
 	font-family: "GipercomExtraboldItalic";
-	src:  url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.woff") format("woff"),
+	src: url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.eot");
+	src:  url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.eot?#iefix") format("embedded-opentype"),
+		  url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.woff") format("woff"),
 		  url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.ttf") format("truetype");
 }
