@@ -118,6 +118,25 @@ $(function(){
     })
 })
 
+// Модальное окно в новости
+
+$(function(){
+    var link = $('.new_btn'),
+        modal = $('.modal_window_3'),
+        overlay = $('.overlay'),
+        close = $('.modal_close');
+
+    link.on('click', function(){
+        modal.fadeIn();
+        overlay.fadeIn();
+        return false;
+    })
+    close.add(overlay).on('click', function(){
+        modal.fadeOut();
+        overlay.fadeOut();
+    })
+})
+
 
 
 // Модальное окно опроса
@@ -263,13 +282,13 @@ if($(document).width() > 1200) {
                             ths.addClass('ready');
                             ths.find('.first_text').on('mouseover', function(){
                                 $(this).siblings('.second_text').stop().fadeIn(150);
-                                $('.overlay').stop().fadeIn(150);
+                               // $('.overlay').stop().fadeIn(150);
 
                             });
 
                             ths.find('.first_text').on('mouseout', function(){
                                 $(this).siblings('.second_text').stop().fadeOut(150);
-                                $('.overlay').stop().fadeOut(150);
+                               // $('.overlay').stop().fadeOut(150);
                             })
                         }, 1000);
                     };

@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: "ProximaNovaLight";
 	src: url("../fonts/ProximaNovaLight/ProximaNova-Light.eot");
@@ -32,4 +33,40 @@
 	src: url("../fonts/ProximaNovaThin/ProximaNova-Thin.eot?#iefix") format("embedded-opentype"),
 			 url("../fonts/ProximaNovaThin/ProximaNova-Thin.woff") format("woff"),
 			 url("../fonts/ProximaNovaThin/ProximaNova-Thin.ttf") format("truetype");
+}
+*/
+
+/* Gipercom */
+
+@font-face {
+	font-family: "GipercomRegular";
+	src: url("../fonts/GipercomRegular/BARNAULGROTESK-REG.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomItalic";
+	src: url("../fonts/GipercomItalic/BARNAULGROTESK-ITAL.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomMedium";
+	src: url("../fonts/GipercomMedium/BARNAULGROTESKMEDIUM-REG.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomMediumItalic";
+	src: url("../fonts/GipercomMediumItalic/BARNAULGROTESKMEDIUM-ITAL.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomBold";
+	src: url("../fonts/GipercomBold/BARNAULGROTESKBOLD-REG.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomBoldItalic";
+	src: url("../fonts/GipercomBoldItalic/BARNAULGROTESKBOLD-ITAL.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomExtrabold";
+	src: url("../fonts/GipercomExtrabold/BARNAULGROTESKEXTRABOLD-REG.ttf") format("truetype");
+}
+@font-face {
+	font-family: "GipercomExtraboldItalic";
+	src: url("../fonts/GipercomExtraboldItalic/BARNAULGROTESKEXTRABOLD-ITAL.ttf") format("truetype");
 }
