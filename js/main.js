@@ -121,7 +121,7 @@ $(function(){
 // Модальное окно в новости
 
 $(function(){
-    var link = $('.new_btn'),
+    var link = $('.new_btn_modal'),
         modal = $('.modal_window_3'),
         overlay = $('.overlay'),
         close = $('.modal_close');

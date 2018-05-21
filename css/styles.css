@@ -62,7 +62,7 @@ button.send_modal[disabled]:hover  {
 }
 .title {
 	color: #505157;
-	font-size: 58px;
+	font-size: 52px;
 	font-family: 'GipercomExtrabold';
 	min-height: 94px;
 	line-height: 94px;
@@ -126,7 +126,7 @@ header .logo_1 {
 	display: block;
 	text-decoration: none;
 	padding: 10px 15px;
-	font-size: 16px;
+	font-size: 21px;
 	text-align: center;
 	color: #505157;
 	white-space: nowrap;
@@ -185,7 +185,7 @@ header .logo_1 {
 	margin-right: -15px;
 }
 .section_1 .flex-row {
-	min-height: 635px;
+	min-height: 540px;
 	align-items: center;
 }
 .section_1 .description_block {
@@ -193,14 +193,14 @@ header .logo_1 {
 }
 .section_1 p {
 	font-family: "GipercomItalic";
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 28px;
 	color: #000;
 	text-align: justify;
 }
 .utp_list {
 	font-family: "GipercomItalic";
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 28px;
 	color: #000;
 }
@@ -263,7 +263,7 @@ header .logo_1 {
 .section_2 {
 	min-height: 635px;
 	background-color: #f5f6f9;
-	padding: 100px 0;
+	padding: 30px 0 0px;
 }
 
 .section_2 .article {
@@ -281,21 +281,20 @@ header .logo_1 {
 	margin: 0 auto;
 }
 .section_2 .article h1 {
-	font-size: 28px;
+	font-size: 34px;
 	line-height: 40px;
 	margin-bottom: 10px;
 }
 .section_2 .article p {
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 24px;
 	color: #000;
 	font-family: "GipercomRegular";
 	margin: 0;
-	text-align: justify;
+	text-align: left;
 }
 span.marker {
-	background: #4686c1;
-	color: #fff;
+	text-decoration: underline;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -320,7 +319,7 @@ span.marker {
 }
 .section_3 .flex-row p {
 	color: #fff;
-	font-size: 18px;
+	font-size: 22px;
 	margin: 0;
 }
 a.download {
@@ -357,22 +356,36 @@ a.download::before {
 	margin: 0;
 }
 .section_4 .bg_gray {
-	padding-top: 90px;
+	padding-top: 30px;
 }
-a.more_info {
+.more_info_block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	margin-top: 20px;
+}
+.more_info_block > div {
+	font-size: 30px;
+}
+
+
+a.more_info {	
 	display: block;
 	text-decoration: none;
-	width: 100%;
+	width: auto;
 	min-height: 78px;
 	background: #4686c1;
 	color: #fff;
 	padding: 26px 15px;
-	font-size: 23px;
+	font-size: 28px;
 	line-height: 24px;
 	text-align: center;
 	border-radius: 4px;
 	transition: all .1s linear;
+}
+.section_8 a.more_info {
+	width: 250px;
+	font-size: 35px;
 }
 a.more_info > span {
 	font-size: 23px;
@@ -384,6 +397,8 @@ a.more_info > span {
 .scheme_block {
 	position: relative;
 	padding: 70px 0;
+	padding-bottom: 0;
+	margin-bottom: -40px;
 }
 .scheme_block img {
 	display: block;
@@ -416,7 +431,7 @@ a.more_info > span {
 
 .scheme_block [class^="point"] .first_text {
 	color: #262626;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 20px;
 	text-align: center;
 	padding: 25px 15px;
@@ -435,7 +450,7 @@ a.more_info > span {
 	top: 102%;
 	left: 0;
 	color: #262626;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 20px;
 	text-align: left;
 	padding: 25px 15px;
@@ -581,7 +596,7 @@ a.more_info > span {
 
 .section_5 {
     background-color: #f5f6f9;
-    padding: 100px 0;
+	padding: 30px 0 10px;
 }
 .section_5 .article {
 	padding: 25px 15px;	
@@ -615,6 +630,8 @@ a.more_info > span {
 }
 .section_5 .article .wrap:hover .text_block {
 	opacity: 1;
+	transform: scale(1.4);
+	z-index: 10;
 }
 .section_5 .article .wrap:hover .img_block img {
 	transform: scale(1.1);
@@ -625,8 +642,8 @@ a.more_info > span {
 	margin-bottom: 10px;
 }
 .section_5 .article .text_block p {
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 15px;
+	line-height: 15px;
 	color: #fff;
 	font-family: "GipercomRegular";
 	margin: 0;
@@ -635,7 +652,8 @@ a.more_info > span {
 	overflow: hidden;
 }
 .area_name {
-	font-size: 20px;
+	font-size: 23px;
+	margin-bottom: 5px;
 	font-weight: bold;
 	text-align: center;height: 60px;
 	overflow: hidden;
@@ -645,7 +663,7 @@ a.more_info > span {
 /* section_6 */
 
 .section_6 {
-	padding: 100px 0;
+    padding: 30px 0;
 }
 .section_6 .title {
 	margin-bottom: 60px;
@@ -673,7 +691,7 @@ a.more_info > span {
 .person_prof {
 	display: block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top: 30px;
 	font-family: 'GipercomMedium';
 }
@@ -690,7 +708,7 @@ a.more_info > span {
 }
 
 .section_6 .text_block p {
-	font-size: 15px;
+	font-size: 23px;
 	line-height: 27px;
 	color: #000;
 	font-family: "GipercomRegular";
@@ -698,7 +716,7 @@ a.more_info > span {
 	text-align: justify;
 }
 .section_6 .text_block .marker a {
-	color: #fff;
+
 }
 .section_6 a.submit,
 .next_question {
@@ -757,7 +775,7 @@ a.more_info:hover,
 
 /* section_8 */
 .section_8 {
-	padding: 100px 0;
+    padding: 30px 0;
 	background: #f5f6f9;
 }
 .section_8 .section_header  {
@@ -828,7 +846,7 @@ a.more_info:hover,
 
 /* section_9 */
 .section_9 {
-	padding: 100px 0 85px;
+    padding: 30px 0;
 }
 .section_9 .owl-stage {
 	display: flex;
@@ -854,15 +872,14 @@ a.more_info:hover,
 	border-color: #ccc;
 }
 .section_9 .article h1 {
-	font-size: 28px;
+	font-size: 25px;
 	line-height: 30px;
 	margin-bottom: 10px;
 }
 .section_9 .article p {	
-	font-size: 15px;
+	font-size: 19px;
 	line-height: 24px;
 	color: #000;
-	text-align: justify;
 	font-family: "GipercomRegular";
 	margin: 0;
 	margin-top: 30px;
@@ -882,6 +899,7 @@ a.more_info:hover,
 	align-items: center;
 	background-color: #fff;
 	transition: all .2s linear;
+	overflow: hidden;
 }
 #slider_2 .owl-nav div {
 	position: absolute;
@@ -923,7 +941,7 @@ a.more_info:hover,
 }
 /* News */
 .news {
-	padding: 170px 0 40px;
+	padding: 110px 0 40px;
 	background: url('../images/bg3.png') no-repeat center;
 	background-color: #f5f6f9;
 }
@@ -969,7 +987,7 @@ a.more_info:hover,
 }
 
 .news .text_block h1 {
-	font-size: 28px;
+	font-size: 35px;
 	line-height: 40px;
 	color: #505157;
 	font-weight: bold;
@@ -977,16 +995,21 @@ a.more_info:hover,
 }
 .news .text_block p {
 	margin: 0;
-	font-size: 16px;
+	font-size: 22px;
 	line-height: 28px;
 	color: #000;
 	font-family: "GipercomRegular";
 	text-align: justify;
 }
+.news .buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 a.new_btn {
 	display: block;
 	text-decoration: none;
-	width: 240px;
+	width: auto;
 	height: 58px;
 	line-height: 58px;
 	text-align: center;
@@ -996,12 +1019,13 @@ a.new_btn {
 	border-radius: 4px;
 	transition: all .1s linear;
 	margin-top: 20px;
+	padding: 0 20px;
 }
 a.new_btn:hover {
 	background: #2464a0;
 }
 .popular_news {
-	padding: 100px 0 50px;
+	padding: 30px 0;
 	background: url('../images/bg4.png') no-repeat center 0px;
 }
 .popular_news .title {
@@ -1019,15 +1043,14 @@ a.new_btn:hover {
 	margin-bottom: 15px;
 }
 .popular_news .article h1 {
-	font-size: 28px;
+	font-size: 25px;
 	line-height: 40px;
 	margin-bottom: 10px;
 }
 .popular_news .article p {	
-	font-size: 15px;
+	font-size: 19px;
 	line-height: 24px;
 	color: #000;
-	text-align: justify;
 	font-family: "GipercomRegular";
 	margin: 0;
 	margin-top: 30px;
@@ -1107,7 +1130,8 @@ a.new_btn:hover {
 
 /* footer */
 footer {
-	padding: 45px 0;
+	font-size: 15px;
+    padding: 20px 0;
 	background-color: #f5f6f9;
 }
 footer p {
@@ -1186,7 +1210,7 @@ footer .search_link {
 	outline: 10px solid rgba(205, 205, 205, .5);
 }
 .modal_window_3 .modal_title{
-	padding-left: 300px;
+	padding-left: 200px;
 }
 .modal_window_3 p {
 	padding-left: 270px;
@@ -1199,7 +1223,9 @@ footer .search_link {
 	left: -30px;
 	bottom: 0px;
 }
-
+.modal_window_3 .modal_textarea {
+    min-height: 130px;
+}
 .modal_window_2,
 .modal_window {
 	width: 740px;
@@ -1229,10 +1255,9 @@ footer .search_link {
 .modal_title {
 	color: #505157;
 	font-size: 27px;
-	line-height: 27px;
+	line-height: 26px;
 	text-align: center;
-	font-weight: bold;
-	margin-bottom: 5px;
+	margin-bottom: 25px;
 }
 .modal_window p,
 .modal_window_2 p,
@@ -1246,7 +1271,7 @@ footer .search_link {
 	margin-bottom: 15px;
 }
 .modal_window p {
-	font-size: 16px;
+	font-size: 21px;
 	font-family: "GipercomRegular";
 }
 .modal_window_2 p {
@@ -1265,7 +1290,7 @@ footer .search_link {
 	line-height: 60px;
 	padding: 0 20px;
 	color: #7e7f83;
-	font-size: 18px;
+	font-size: 19px;
 	margin-bottom: 20px;
 	font-family: "GipercomRegular";
 }
@@ -1279,7 +1304,7 @@ footer .search_link {
 	border-radius: 4px;
 	padding: 15px 20px;
 	color: #7e7f83;
-	font-size: 18px;
+	font-size: 19px;
 	margin-bottom: 20px;
 	font-family: "GipercomRegular";
 }
@@ -1396,7 +1421,7 @@ footer .search_link {
 	display: block;
 	padding: 10px;
 	color: #7e7f83;
-	font-size: 17px;
+	font-size: 20px;
 	font-family: "GipercomRegular";
 	transition: all .1s linear;
 }
@@ -1464,14 +1489,14 @@ footer .search_link {
 	font-weight: bold;
 }
 .person_card .profession {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 24px;
 	color: #505157;
 	font-family: "GipercomRegular";
 	margin-bottom: 15px;
 }
 .advice_block {
-	font-size: 17px;
+	font-size: 20px;
 	line-height: 24px;
 	color: #505157;
 	text-align: center;
@@ -1763,6 +1788,19 @@ footer .search_link {
 	.test_modal .card {
 		display: none;
 	}
+	.news {
+		padding-top: 100px;
+	}
+	.news .row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.news .gallery_col {
+		order: 1;
+		margin: 20px 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1850,6 +1888,9 @@ footer .search_link {
 }
 
 @media screen and (max-width: 600px) {
+	.news .buttons {
+		display: block;
+	}
 	.section_9 .article .img_block {
 		height: auto;
 	}
