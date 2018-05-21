@@ -1210,6 +1210,9 @@ footer .search_link {
 	outline: 10px solid rgba(205, 205, 205, .5);
 }
 .modal_window_3 .modal_title{
+	padding-left: 300px;
+}
+.modal_window_3 .modal_title_2{
 	padding-left: 200px;
 }
 .modal_window_3 p {
@@ -1252,7 +1255,8 @@ footer .search_link {
 	padding: 0 15px;
 	line-height: normal;
 }
-.modal_title {
+.modal_title,
+.modal_title_2 {
 	color: #505157;
 	font-size: 27px;
 	line-height: 26px;
@@ -1278,8 +1282,7 @@ footer .search_link {
 	text-align: left;
 }
 .modal_window_3 p {
-	font-size: 17px;
-	font-weight: bold;
+	font-size: 19px;
 }
 .modal_input {
 	display: block;
@@ -1407,7 +1410,7 @@ footer .search_link {
 	font-size: 27px;
 	font-weight: bold;
 	color: #505157;
-	line-height: 24px;
+	line-height: 30px;
 	margin-bottom: 20px;
 }
 
