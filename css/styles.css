@@ -298,6 +298,10 @@ span.marker {
 	display: inline-block;
 	vertical-align: middle;
 }
+span.marker_2 {
+	color: #fff;
+	background: #4686c1;
+}
 /* section_3 */
 
 .section_3 {
@@ -627,11 +631,12 @@ a.more_info > span {
 	opacity: 0;
 	padding: 15px;
 	transition: all .2s linear;
+	z-index: 10;
 }
 .section_5 .article .wrap:hover .text_block {
 	opacity: 1;
 	transform: scale(1.4);
-	z-index: 10;
+	
 }
 .section_5 .article .wrap:hover .img_block img {
 	transform: scale(1.1);
@@ -714,6 +719,9 @@ a.more_info > span {
 	font-family: "GipercomRegular";
 	margin: 0;
 	text-align: justify;
+}
+.section_6 p.mrg_bot {
+	margin-bottom: 10px;
 }
 .section_6 .text_block .marker a {
 
