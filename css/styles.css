@@ -1538,6 +1538,14 @@ footer .search_link {
 	display: block;
 }
 @media screen and (max-width: 1200px) {
+	.header_contacts .links {
+		float: none;
+	}
+	.header_contacts .links a {
+		margin: 0 30px;
+		padding: 5px 15px;
+		text-align: center;
+	}
 	.scheme_block img,
 	.scheme_block [class^="point"]::before,
 	.scheme_block [class^="point"]::after {
