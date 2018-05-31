@@ -6,7 +6,6 @@ body{
 	font-family: "GipercomRegular", sans-serif;
 	line-height: 1.5;
 	color: #222;
-	overflow-x: hidden;
 }
 ul {
 	list-style: none;
@@ -855,6 +854,7 @@ a.more_info:hover,
 /* section_9 */
 .section_9 {
     padding: 30px 0;
+    overflow: hidden;
 }
 .section_9 .owl-stage {
 	display: flex;
@@ -1815,6 +1815,12 @@ footer .search_link {
 }
 
 @media screen and (max-width: 768px) {
+	#slider_2 .owl-nav .owl-prev {
+		left: 0;
+	}
+	#slider_2 .owl-nav .owl-next {
+		right: 0;
+	}
 	.section_1 {
 
 	}
